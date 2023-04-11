@@ -1,0 +1,8 @@
+<list>
+  <jmbench.impl.LibraryStringInfo>
+    <factory>jmatbench.lattices.LatticesAlgorithmFactory</factory>
+    <nameFull>Lattices</nameFull>
+    <nameShort>Lattices</nameShort>
+    <namePlot>Lattices</namePlot>
+  </jmbench.impl.LibraryStringInfo>
+</list>
