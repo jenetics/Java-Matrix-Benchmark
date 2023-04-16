@@ -10,3 +10,4 @@ libs
 results
 *.jar
 **/runtimeLibs/*.pom
+/case.xml

@@ -1,8 +1,4 @@
 /*
- * Copyright (c) 2009-2015, Peter Abeles. All Rights Reserved.
- *
- * This file is part of JMatrixBenchmark.
- *
  * JMatrixBenchmark is free software: you can redistribute it and/or
  * modify it under the terms of the GNU General Public License as
  * published by the Free Software Foundation, either version 3
@@ -20,10 +16,10 @@
 package jmatbench.lattices;
 
 import io.jenetics.lattices.matrix.DoubleMatrix2d;
-import io.jenetics.lattices.matrix.blas.Algebra;
-import io.jenetics.lattices.matrix.blas.Cholesky;
-import io.jenetics.lattices.matrix.blas.Eigenvalue;
-import io.jenetics.lattices.matrix.blas.SingularValue;
+import io.jenetics.lattices.matrix.linalg.Algebra;
+import io.jenetics.lattices.matrix.linalg.Cholesky;
+import io.jenetics.lattices.matrix.linalg.Eigenvalue;
+import io.jenetics.lattices.matrix.linalg.SingularValue;
 import jmbench.interfaces.BenchmarkMatrix;
 import jmbench.interfaces.DetectedException;
 import jmbench.interfaces.MatrixProcessorInterface;
@@ -33,10 +29,6 @@ import jmbench.matrix.RowMajorMatrix;
 import jmbench.matrix.RowMajorOps;
 import jmbench.tools.BenchmarkConstants;
 
-
-/**
- * @author Peter Abeles
- */
 public class LatticesAlgorithmFactory implements RuntimePerformanceFactory {
 
     @Override
@@ -102,7 +94,7 @@ public class LatticesAlgorithmFactory implements RuntimePerformanceFactory {
 
             for( long i = 0; i < numTrials; i++ ) {
                 tmp.assign(matA);
-                var lu = io.jenetics.lattices.matrix.blas.LU.decompose(tmp);
+                var lu = io.jenetics.lattices.matrix.linalg.LU.decompose(tmp);
 
                 L = lu.L();
                 U = lu.U();
@@ -202,7 +194,7 @@ public class LatticesAlgorithmFactory implements RuntimePerformanceFactory {
             long prev = System.nanoTime();
 
             for( long i = 0; i < numTrials; i++ ) {
-                var qr = io.jenetics.lattices.matrix.blas.QR.decompose(matA);
+                var qr = io.jenetics.lattices.matrix.linalg.QR.decompose(matA);
 
                 Q = qr.Q();
                 R = qr.R();

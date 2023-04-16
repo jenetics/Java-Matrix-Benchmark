@@ -1,6 +1,4 @@
 /*
- * Copyright (c) 2009-2015, Peter Abeles. All Rights Reserved.
- *
  * This file is part of JMatrixBenchmark.
  *
  * JMatrixBenchmark is free software: you can redistribute it and/or
@@ -22,10 +20,6 @@ package jmatbench.lattices;
 import io.jenetics.lattices.matrix.DoubleMatrix2d;
 import jmbench.interfaces.BenchmarkMatrix;
 
-
-/**
- * @author Peter Abeles
- */
 public class LatticesBenchmarkMatrix implements BenchmarkMatrix {
 
     DoubleMatrix2d mat;

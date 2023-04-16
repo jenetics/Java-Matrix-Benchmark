@@ -1,5 +1,5 @@
 dependencies {
     implementation project(':main')
     implementation 'io.jenetics:jpx:1.4.0'
-    implementation 'io.jenetics:lattices'
+    implementation 'io.jenetics:lattices:3.0.0.ALPHA3'
 }

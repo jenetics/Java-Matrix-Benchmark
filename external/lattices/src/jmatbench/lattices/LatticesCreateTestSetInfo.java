@@ -1,6 +1,4 @@
 /*
- * Copyright (c) 2009-2015, Peter Abeles. All Rights Reserved.
- *
  * This file is part of JMatrixBenchmark.
  *
  * JMatrixBenchmark is free software: you can redistribute it and/or
@@ -24,9 +22,6 @@ import jmbench.tools.MiscTools;
 
 import java.io.IOException;
 
-/**
- * @author Peter Abeles
- */
 public class LatticesCreateTestSetInfo {
     public static void main(String[] args) throws IOException {
         LibraryStringInfo info = new LibraryStringInfo();
