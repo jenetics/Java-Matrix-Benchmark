@@ -20,6 +20,7 @@ if( file('external/jeigen/libs/Jeigen-onefat.jar').exists()) {
 }
 
 // Compose builds.
+/*
 if (file('../Lattices').exists()) {
     includeBuild('../Lattices') {
         dependencySubstitution {
@@ -27,3 +28,4 @@ if (file('../Lattices').exists()) {
         }
     }
 }
+ */
